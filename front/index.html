@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h1>Calculadora</h1>
+
+      <form id="formulario">
+        <label for="a">Numero A</label>
+        <input type="number" id="a" step="any" required>
+
+        <label for="b">Numero B</label>
+        <input type="number" id="b" step="any" required>
+
+        <label for="operacion">Operacion</label>
+        <select id="operacion">
+          <option value="add">Suma</option>
+          <option value="subtract">Resta</option>
+          <option value="multiply">Multiplicacion</option>
+          <option value="divide">Division</option>
+	  <option value="power">Potencia</option>
+	  <option value="sqrt">Raiz cuadrada</option>
+	  <option value="calcular_abs">Valor Absoluto </option>
+        </select>
+
+        <button type="submit">Calcular</button>
+      </form>
+
+      <div id="resultado" class="resultado">
+        El resultado aparecera aqui.
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
